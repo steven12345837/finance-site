@@ -7,3 +7,17 @@
   <p>本網站內容僅供教育與一般資訊參考，非投資建議。投資有風險，過去績效不代表未來表現。</p>
 </section>
 </main><script>(function(){if(!sessionStorage.getItem('__shell__')){sessionStorage.setItem('__redirect__',location.pathname);var s=location.pathname.split('/').filter(Boolean),b=s.length>0?'/'+s[0]+'/':'/';location.replace(b);}})();</script></body></html>
+
+<!-- 直入子頁時帶回殼 -->
+<script>
+(function(){
+  if(!sessionStorage.getItem('__shell__')){
+    sessionStorage.setItem('__redirect__', location.pathname);
+    var s = location.pathname.split('/').filter(Boolean);
+    var b = s.length>0 ? '/' + s[0] + '/' : '/'; // => /finance-site/
+    location.replace(b);
+  }
+})();
+</script>
+</body>
+</html>
