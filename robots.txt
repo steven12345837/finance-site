@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://steven12345837.github.io/finance-site/sitemap.xml
