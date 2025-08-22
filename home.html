@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <title>首頁｜理財專員</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<main id="頁面內容">
+  <!-- ===== 首頁：主視覺區（圖片預留位） ===== -->
+  <section id="首頁-主視覺" class="區塊">
+    <div class="橫幅">
+      <img src="images/首頁-橫幅.jpg" alt="理財專員主視覺（請替換圖片）" loading="eager">
+      <div class="橫幅-文案">
+        <h1>用專業，陪你打造安心穩健的財務計畫</h1>
+        <p>資產管理・全面規劃・保險顧問・稅務/遺產夥伴・企業方案</p>
+        <div class="橫幅-CTA">
+          <a class="按鈕 強調" href="/contact/" data-route="/contact/">預約免費諮詢</a>
+          <a class="按鈕 次要" href="https://lin.ee/你的LINE短網址" target="_blank" rel="noopener">加入 LINE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 首頁：服務導覽 ===== -->
+  <section id="首頁-服務導覽" class="區塊 容器">
+    <div class="格線3">
+      <article class="卡片">
+        <h3>資產管理</h3>
+        <p>訂立 IPS、紀律再平衡、透明收費。</p>
+        <a class="連結" href="/services/asset-management.html" data-route="/services/asset-management.html">瞭解更多</a>
+      </article>
+      <article class="卡片">
+        <h3>全面規劃</h3>
+        <p>退休、教育金、現金流與保險配置一次到位。</p>
+        <a class="連結" href="/services/financial-planning.html" data-route="/services/financial-planning.html">瞭解更多</a>
+      </article>
+      <article class="卡片">
+        <h3>保險顧問</h3>
+        <p>不售只顧，站在你這邊的保障配置。</p>
+        <a class="連結" href="/services/insurance-advisory.html" data-route="/services/insurance-advisory.html">瞭解更多</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 首頁：精選內容（圖片預留位） ===== -->
+  <section id="首頁-精選內容" class="區塊 容器">
+    <div class="格線2">
+      <article class="卡片 圖文">
+        <img src="images/首頁-內容A.jpg" alt="資產配置圖解（請替換圖片）" loading="lazy">
+        <div>
+          <h3>資產配置白話</h3>
+          <p>用簡單方式看懂風險與報酬，打造長期可持續的投資組合。</p>
+          <a class="連結" href="/academy/basics/asset-allocation.html" data-route="/academy/basics/asset-allocation.html">閱讀</a>
+        </div>
+      </article>
+      <article class="卡片 圖文">
+        <img src="images/首頁-內容B.jpg" alt="複利試算示意（請替換圖片）" loading="lazy">
+        <div>
+          <h3>複利試算工具</h3>
+          <p>輸入金額與年化報酬率，立刻看到終值。</p>
+          <a class="連結" href="/academy/calculators/compounding.html" data-route="/academy/calculators/compounding.html">立即試算</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- 直入子頁：帶回殼並保持路徑 -->
+<script>
+(function(){
+  if(!sessionStorage.getItem('__shell__')){
+    sessionStorage.setItem('__redirect__', location.pathname);
+    var s=location.pathname.split('/').filter(Boolean), b=s.length>0?'/'+s[0]+'/':'/';
+    location.replace(b);
+  }
+})();
+</script>
+</body>
+</html>
