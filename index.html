@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
 <head>
-  <!-- ====== 基本中繼資料 ====== -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ===== 基本中繼資料 ===== -->
+  <meta charset="utf-8">
   <title>理財專員｜全方位財務規劃與資產管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/finance-site/">
   <meta name="description" content="資產管理、全面規劃、保險顧問、稅務/遺產合作、企業方案。預約諮詢或加入 LINE，一起打造你的財務藍圖。">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="images/favicon.png">
 </head>
 <body>
@@ -14,23 +15,21 @@
   <!-- 頂部導覽列（全站共用）       -->
   <!-- ============================= -->
   <header id="導覽列" class="容器">
-    <a class="品牌" href="/finance-site/" data-route="/">理財專員</a>
-
-    <!-- 主要導覽（桌機版） -->
-    <nav id="主導覽">
-      <a href="/finance-site/" data-route="/">首頁</a>
-      <a href="/finance-site/about/" data-route="/about/">關於我</a>
+    <a class="品牌" href="./">理財專員</a>
+    <nav id="主導覽" aria-label="主選單">
+      <a href="./">首頁</a>
+      <a href="about/">關於我</a>
 
       <!-- 服務與方案 -->
       <div class="下拉">
-        <button class="下拉按鈕">服務與方案</button>
-        <div class="下拉內容">
-          <a data-route="/services/">服務總覽</a>
-          <a data-route="/services/asset-management.html">資產管理</a>
-          <a data-route="/services/financial-planning.html">全面規劃</a>
-          <a data-route="/services/insurance-advisory.html">保險顧問</a>
-          <a data-route="/services/tax-estate-partners.html">稅務/遺產（夥伴）</a>
-          <a data-route="/services/corporate-solutions.html">企業方案</a>
+        <button class="下拉按鈕" aria-haspopup="true" aria-expanded="false">服務與方案</button>
+        <div class="下拉內容" role="menu">
+          <a href="services/">服務總覽</a>
+          <a href="services/asset-management/">資產管理</a>
+          <a href="services/financial-planning/">全面規劃</a>
+          <a href="services/insurance-advisory/">保險顧問</a>
+          <a href="services/tax-estate-partners/">稅務/遺產（夥伴）</a>
+          <a href="services/corporate-solutions/">企業方案</a>
         </div>
       </div>
 
@@ -38,58 +37,57 @@
       <div class="下拉">
         <button class="下拉按鈕">商品百科</button>
         <div class="下拉內容">
-          <a data-route="/products/">分類入口</a>
-          <a data-route="/products/etf/">ETF 概論</a>
-          <a data-route="/products/etf/0050.html">台灣50（0050）</a>
-          <a data-route="/products/etf/global-bond.html">全球債ETF</a>
-          <a data-route="/products/funds/">基金</a>
-          <a data-route="/products/bonds/">債券</a>
-          <a data-route="/products/futures/">期貨概論</a>
-          <a data-route="/products/futures/micro-sp500.html">微型 S&P500</a>
-          <a data-route="/products/options/">選擇權</a>
+          <a href="products/">分類入口</a>
+          <a href="products/etf/">ETF 概論</a>
+          <a href="products/etf/0050/">台灣50（0050）</a>
+          <a href="products/etf/global-bond/">全球債ETF</a>
+          <a href="products/funds/">基金</a>
+          <a href="products/bonds/">債券</a>
+          <a href="products/futures/">期貨概論</a>
+          <a href="products/futures/micro-sp500/">微型 S&P500</a>
+          <a href="products/options/">選擇權</a>
         </div>
       </div>
 
-      <!-- 理財學院 -->
+      <!-- 學院 / 案例 / 工具 -->
       <div class="下拉">
         <button class="下拉按鈕">理財學院</button>
         <div class="下拉內容">
-          <a data-route="/academy/">主題與熱門</a>
-          <a data-route="/academy/basics/budgeting.html">預算/記帳</a>
-          <a data-route="/academy/basics/asset-allocation.html">資產配置白話</a>
-          <a data-route="/academy/strategies/">投資策略</a>
-          <a data-route="/academy/calculators/compounding.html">複利計算機</a>
-          <a data-route="/academy/calculators/retirement-gap.html">退休缺口試算</a>
-          <a data-route="/academy/downloads/">下載</a>
+          <a href="academy/">主題與熱門</a>
+          <a href="academy/basics/budgeting/">預算/記帳</a>
+          <a href="academy/basics/asset-allocation/">資產配置白話</a>
+          <a href="academy/strategies/">投資策略</a>
+          <a href="academy/calculators/compounding/">複利計算機</a>
+          <a href="academy/calculators/retirement-gap/">退休缺口試算</a>
+          <a href="academy/downloads/">下載</a>
         </div>
       </div>
 
-      <!-- 案例 / 工具 / FAQ / 聯絡 -->
       <div class="下拉">
         <button class="下拉按鈕">客群案例</button>
         <div class="下拉內容">
-          <a data-route="/cases/">案例總覽</a>
-          <a data-route="/cases/student.html">大學生</a>
-          <a data-route="/cases/young-pro.html">社會新鮮人</a>
-          <a data-route="/cases/conservative-hnwi.html">保守型高資產</a>
+          <a href="cases/">案例總覽</a>
+          <a href="cases/student/">大學生</a>
+          <a href="cases/young-pro/">社會新鮮人</a>
+          <a href="cases/conservative-hnwi/">保守型高資產</a>
         </div>
       </div>
 
       <div class="下拉">
         <button class="下拉按鈕">工具</button>
         <div class="下拉內容">
-          <a data-route="/tools/risk-quiz.html">風險屬性測驗</a>
-          <a data-route="/tools/intake-form.html">初診問卷</a>
+          <a href="tools/risk-quiz/">風險屬性測驗</a>
+          <a href="tools/intake-form/">初診問卷</a>
         </div>
       </div>
 
-      <a data-route="/faq/">常見問答</a>
-      <a data-route="/contact/" class="次級">聯絡/預約</a>
+      <a href="faq/">常見問答</a>
+      <a href="contact/" class="次級">聯絡/預約</a>
     </nav>
 
     <!-- 全站 CTA（置頂顯眼） -->
     <div id="頂部CTA">
-      <a class="按鈕 強調" data-route="/contact/">預約諮詢</a>
+      <a class="按鈕 強調" href="contact/">預約諮詢</a>
       <a class="按鈕 線條" href="https://lin.ee/你的LINE短網址" target="_blank" rel="noopener">加入 LINE</a>
     </div>
 
@@ -98,9 +96,55 @@
   </header>
 
   <!-- ============================= -->
-  <!-- 主內容容器（由殼動態載入）   -->
+  <!-- 首頁內容（含圖片預留位）       -->
   <!-- ============================= -->
-  <main id="內容區" class="容器" tabindex="-1" aria-live="polite" aria-busy="false"></main>
+  <main id="頁面內容">
+    <!-- 首頁：主視覺 -->
+    <section id="首頁-主視覺" class="區塊">
+      <div class="橫幅">
+        <img src="images/首頁-橫幅.jpg" alt="理財專員主視覺（請替換圖片）" loading="eager">
+        <div class="橫幅-文案">
+          <h1>用專業，陪你打造安心穩健的財務計畫</h1>
+          <p>資產管理・全面規劃・保險顧問・稅務/遺產・企業方案</p>
+          <div class="橫幅-CTA">
+            <a class="按鈕 強調" href="contact/">預約免費諮詢</a>
+            <a class="按鈕 次要" href="https://lin.ee/你的LINE短網址" target="_blank" rel="noopener">加入 LINE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 首頁：服務導覽 -->
+    <section id="首頁-服務導覽" class="區塊 容器">
+      <div class="格線3">
+        <article class="卡片"><h3>資產管理</h3><p>訂立 IPS、紀律再平衡、透明收費。</p><a class="連結" href="services/asset-management/">瞭解更多</a></article>
+        <article class="卡片"><h3>全面規劃</h3><p>退休、教育金、現金流與保險配置一次到位。</p><a class="連結" href="services/financial-planning/">瞭解更多</a></article>
+        <article class="卡片"><h3>保險顧問</h3><p>不售只顧，站在你這邊的保障配置。</p><a class="連結" href="services/insurance-advisory/">瞭解更多</a></article>
+      </div>
+    </section>
+
+    <!-- 首頁：精選內容（圖片預留位） -->
+    <section id="首頁-精選內容" class="區塊 容器">
+      <div class="格線2">
+        <article class="卡片 圖文">
+          <img src="images/首頁-內容A.jpg" alt="資產配置圖解（請替換圖片）" loading="lazy">
+          <div>
+            <h3>資產配置白話</h3>
+            <p>用簡單方式看懂風險與報酬，打造長期可持續的投資組合。</p>
+            <a class="連結" href="academy/basics/asset-allocation/">閱讀</a>
+          </div>
+        </article>
+        <article class="卡片 圖文">
+          <img src="images/首頁-內容B.jpg" alt="複利試算示意（請替換圖片）" loading="lazy">
+          <div>
+            <h3>複利試算工具</h3>
+            <p>輸入金額與年化報酬率，立刻看到終值。</p>
+            <a class="連結" href="academy/calculators/compounding/">立即試算</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <!-- ============================= -->
   <!-- 頁尾（全站共用）             -->
@@ -115,14 +159,13 @@
       </div>
     </div>
     <div class="頁尾-右">
-      <a data-route="/legal/disclosures.html">重要揭露</a>
-      <a data-route="/legal/privacy.html">隱私權政策</a>
-      <a data-route="/legal/terms.html">使用條款</a>
-      <a href="/finance-site/sitemap.xml">網站地圖</a>
+      <a href="legal/disclosures/">重要揭露</a>
+      <a href="legal/privacy/">隱私權政策</a>
+      <a href="legal/terms/">使用條款</a>
+      <a href="sitemap.xml">網站地圖</a>
     </div>
   </footer>
 
-  <!-- 主腳本：路由＋動態載入＋互動 -->
-  <script src="assets/js/app.js?v=20250822" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
