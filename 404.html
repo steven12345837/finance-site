@@ -6,12 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>
     (function(){
-      // 取出第一層專案資料夾做為殼根路徑（Project Pages 例如 /finance-site/）
       var seg  = location.pathname.split('/').filter(Boolean);
-      var base = seg.length > 0 ? '/' + seg[0] + '/' : '/';
-      // 把使用者原本想去的路徑暫存起來，回到殼後再載入
+      var base = seg.length > 0 ? '/' + seg[0] + '/' : '/'; // /finance-site/
       sessionStorage.setItem('__redirect__', location.pathname + location.search + location.hash);
-      // 導回殼（index.html）
       location.replace(base);
     })();
   </script>
