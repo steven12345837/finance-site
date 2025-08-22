@@ -7,3 +7,17 @@
   <p>網站使用規範、免責、智慧財產權與準據法條款。</p>
 </section>
 </main><script>(function(){if(!sessionStorage.getItem('__shell__')){sessionStorage.setItem('__redirect__',location.pathname);var s=location.pathname.split('/').filter(Boolean),b=s.length>0?'/'+s[0]+'/':'/';location.replace(b);}})();</script></body></html>
+
+<!-- 直入子頁時帶回殼 -->
+<script>
+(function(){
+  if(!sessionStorage.getItem('__shell__')){
+    sessionStorage.setItem('__redirect__', location.pathname);
+    var s = location.pathname.split('/').filter(Boolean);
+    var b = s.length>0 ? '/' + s[0] + '/' : '/'; // => /finance-site/
+    location.replace(b);
+  }
+})();
+</script>
+</body>
+</html>
