@@ -2,16 +2,17 @@
 <html lang="zh-Hant-TW">
 <head>
   <meta charset="utf-8">
-  <title>載入中…</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script>
-    (function(){
-      var seg  = location.pathname.split('/').filter(Boolean);
-      var base = seg.length > 0 ? '/' + seg[0] + '/' : '/'; // /finance-site/
-      sessionStorage.setItem('__redirect__', location.pathname + location.search + location.hash);
-      location.replace(base);
-    })();
-  </script>
+  <title>頁面不存在｜理財專員</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/finance-site/">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>正在導向正確頁面…</body>
+<body>
+  <main class="容器 區塊 內文">
+    <!-- 404 友善頁 -->
+    <h1>哎呀，這個頁面走失了</h1>
+    <p>請檢查網址是否正確，或回到首頁。</p>
+    <p><a class="按鈕 強調" href="./">回首頁</a> <a class="按鈕 線條" href="contact/">聯絡我們</a></p>
+  </main>
+</body>
 </html>
